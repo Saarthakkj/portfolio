@@ -254,6 +254,16 @@ h4 {
     font-size: 17px;
 }
 
+.project-title-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-title-link:hover {
+    color: var(--accent-color);
+}
+
 .project-description {
     list-style: none;
     padding: 0;
@@ -505,6 +515,25 @@ h4 {
 }
 
 .x-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin: 0 2px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.github-link:hover {
+    opacity: 0.7;
+}
+
+.github-icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
