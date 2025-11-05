@@ -30,11 +30,11 @@ python -m http.server 8000
 - **Posts**: Technical deep dives and ML blog posts
 
 ### Home Section
-- **What I Do**: Contract-based ML Engineer role
-- **Projects**: Featuring 3 key projects (Rankify, Docbook, Bayesian Course Rec)
-- **Posts**: Deep dives into ML concepts (Bayesian Personalized Ranking, GNNs coming soon)
+- **What I Do**: Contract-based ML Engineer role (Jun 2025 - Oct 2025)
+- **Education**: BTech ECE from IIIT Delhi (Nov 2022 - Present)
+- **Projects**: Featuring 2 key projects (Docbook, Bayesian Course Rec)
 - **What Excites Me**: Focus on ML research & generative engine optimization
-- **Find Me Online**: GitHub and X/Twitter links
+- **Connect**: GitHub and X/Twitter links
 
 ### Posts Section
 - **Bayesian Personalized Ranking**: Deep dive into BPR for implicit feedback systems

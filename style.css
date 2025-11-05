@@ -224,6 +224,47 @@ h4 {
     font-weight: bold;
 }
 
+/* Education */
+.education-item {
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.education-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.education-details h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.school {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.institution {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
 /* Projects */
 .project-item {
     padding: 20px;
