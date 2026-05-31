@@ -21,8 +21,8 @@
                     <img src="profile.png" alt="Saarthak Profile Picture" class="profile-pic">
                     <h1>saarthak</h1>
                 </div>
-                <p class="tagline">solving generative engine optimization</p>
-                <p class="intro-text">I'm Saarthak, an ML engineer exploring generative model optimization. I've worked on classical DL, GNNs, and NLP. Check out my posts section :)</p>
+                <p class="tagline">building things I assumed were impossible</p>
+                <p class="intro-text">I'm Saarthak, an ML engineer who builds end-to-end ML systems at startups — from autonomous knowledge graph agents to novel GNN models trained from scratch. Check out my posts section :)</p>
             </div>
         </header>
 
@@ -38,11 +38,11 @@
                     <h3>Applied AI Intern • <span class="company">Brace.so</span></h3>
                     <p class="duration">Mar 2026 - May 2026</p>
                     <ul class="experience-description">
-                        <li><strong>Data Pipeline & Optimization:</strong> Designed and shipped a relationship-scoring strategy that reduced posts processed by 97% (2,186 to 64 data points) while retaining 98% of high-quality relationship signals, validated through 60+ controlled experiments across 72 profiles and ~90K baseline relationship records. Built the quality score using recency, engagement, virality controls, top-result filtering, and reaction limits, then reduced third-party API usage by consolidating a multi-step workflow into a single pass and cutting external API calls per profile refresh by ~60%.</li>
-                        <li><strong>Search & Ranking:</strong> Rebuilt people search ranking so expanded LLM queries could enforce exact role, company, and location requirements, replacing soft score cutoffs with deterministic filtering for structured searches.</li>
-                        <li><strong>Knowledge Graph & Taxonomy:</strong> Built an autonomous skill-taxonomy maintenance engine that extracts skills and tools from profile text, ranks evidence with semantic similarity and usage patterns, and classifies terms into parent-child categories.</li>
-                        <li><strong>Decision Quality:</strong> Built a deferred review system for low-confidence skill candidates, saving full evidence across batches and re-evaluating candidates after more signals accumulated.</li>
-                        <li><strong>Connection Path Finding:</strong> Built a path expansion system that finds direct and indirect relationship paths up to 3 degrees away across ~4,700 profiles and ~11,600 relationship links, evaluating 3.4M+ candidate path checks and 29.3M possible route combinations to improve candidate selection. Achieved a 99.87% path-finding success rate with 87.69% best-candidate selection accuracy using threshold-based selection, validated across 9 strategies and multiple profile-connectivity segments.</li>
+                        <li><strong>Pedro (Autonomous Knowledge Graph Agent):</strong> Built an autonomous agent that maintains a <strong>10K+ node knowledge graph</strong> without manual curation, using a multi-LLM architecture (Gemini + Anthropic Claude) with parallel evaluation and a deferred decision system for low-confidence candidates. The agent extracts skills and tools from profile text, ranks evidence with semantic similarity and usage patterns, and classifies terms into a parent-child taxonomy — all without human intervention.</li>
+                        <li><strong>Search Engine:</strong> Rebuilt people search ranking with <strong>LLM-generated structured field constraints</strong> (xAI/Grok), replacing fuzzy matching with deterministic gating for exact role, company, and location requirements. Built <strong>LLM observability across 4 providers</strong>.</li>
+                        <li><strong>Oden (Connection Path Discovery):</strong> Built multi-hop connection path discovery across <strong>4,739 actors and 11,609 edges</strong>, evaluating <strong>3.4M+ directed trials</strong> and 29.3M possible route combinations. Achieved <strong>99.87% path-finding success rate</strong>, validated across 9 strategies and multiple profile-connectivity segments.</li>
+                        <li><strong>Actor-Relationship Optimization:</strong> Ran <strong>60+ controlled experiments</strong> to design a relationship-scoring strategy that reduced processing to <strong>2.93% of baseline</strong> while retaining 98% of close-connection edges, across 72 profiles and ~90K baseline relationship records.</li>
+                        <li><strong>Knowledge Graph Visualizer:</strong> Built a full-stack knowledge graph visualizer (Python + Cytoscape.js) for exploring and debugging the graph interactively.</li>
                     </ul>
                 </div>
             </div>
@@ -54,10 +54,10 @@
                     <h3>ML Engineer • <span class="company">Stealth Startup (Contract)</span></h3>
                     <p class="duration">Jun 2025 - Nov 2025 (Contract work: Jul 2025 - Oct 2025)</p>
                     <ul class="experience-description">
-                        <li><strong>Business Impact:</strong> Built the core ML infrastructure that helped the client secure a <strong>₹30 Lac (~$35k) research grant</strong>.</li>
-                        <li><strong>Custom Tooling:</strong> Adapted and extended <strong>GraphGym</strong> source code to ingest custom molecular embeddings, enabling automated experimentation across 48k data points.</li>
-                        <li><strong>Massive Scale:</strong> Orchestrated <strong>1,000,000+ optimization trials</strong> on remote distributed GPUs and <strong>beat Chemprop</strong>, the industry standard.</li>
+                        <li><strong>Novel Everything:</strong> Given a <strong>$35 budget</strong> to solve a problem nobody had solved — trained a GNN from scratch for molecular property prediction with a <strong>novel task, novel dataset, and novel model</strong>. No pretrained weights, no reference implementations, no existing benchmarks.</li>
+                        <li><strong>Experimentation at Scale:</strong> Adapted and extended <strong>GraphGym</strong> to run experiments with custom molecular embeddings across 48k data points. Orchestrated <strong>1,000,000+ optimization trials</strong> on remote distributed GPUs and <strong>beat Chemprop</strong>, the industry standard.</li>
                         <li><strong>Rapid Delivery:</strong> Shipped a production-ready, lightweight (2M param) inference API in <strong>8 weeks</strong>, handling the full lifecycle from data ingestion to AWS deployment using FastAPI and Docker.</li>
+                        <li><strong>Business Impact:</strong> Client used this work to secure a <strong>₹30 Lac (~$35k) research grant</strong>.</li>
                     </ul>
                 </div>
             </div>
@@ -152,8 +152,8 @@
             <!-- What Excites Me -->
             <section class="what-excites">
                 <h2>what excites me</h2>
-                <p>I'm spending most of my time diving into NLP these days to solve generative engine optimization from first principles as an LLM research problem.</p>
-                <p>There's something fascinating about how we can influence LLMs for particular websites, and I'm here to solve it.</p>
+                <p>I'm drawn to problems that feel impossible at first — autonomous agents that maintain knowledge graphs without human curation, search engines that understand structured intent, GNN models trained from scratch on datasets that didn't exist before.</p>
+                <p>Right now I'm deep in NLP and graph ML, building systems that ship to production and solve real problems at startups.</p>
             </section>
 <!-- 
             Find Me Online -->
