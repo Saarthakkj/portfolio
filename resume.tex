@@ -1,0 +1,135 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.36in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.0}
+\linespread{0.93}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{textgray}{HTML}{374151}
+
+\newcommand{\name}[1]{%
+  {\Large\bfseries #1}\par\vspace{1pt}
+}
+
+\newcommand{\contact}[1]{%
+  {\footnotesize #1}\par\vspace{4pt}
+}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{3pt}
+  {\normalsize\bfseries\color{accent} #1}\par
+  \vspace{1pt}
+  {\color{accent}\hrule height 0.6pt}
+  \vspace{2pt}
+}
+
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    {\bfseries #1} & {\footnotesize\bfseries #2} \\
+    {\footnotesize\textit{#3}} & {\footnotesize #4}
+  \end{tabularx}
+  \vspace{1pt}
+}
+
+\newcommand{\projectentry}[2]{%
+  {\bfseries #1}\hfill{\footnotesize #2}\par
+  \vspace{1pt}
+}
+
+\newenvironment{tightitems}{%
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{1pt}
+    \setlength{\leftmargin}{12pt}
+}{%
+  \end{itemize}
+  \vspace{0pt}
+}
+
+\begin{document}
+\fontsize{9.25}{10.2}\selectfont
+\raggedright
+
+\name{Saarthak Saxena}
+\contact{\href{mailto:saarthaksaxena7@gmail.com}{saarthaksaxena7@gmail.com} \textbar{}
+\href{https://www.linkedin.com/in/saarthakiiitd/}{linkedin.com/in/saarthakiiitd} \textbar{}
+\href{https://github.com/Saarthakkj}{github.com/Saarthakkj} \textbar{}
+\href{https://x.com/curlysaarthak}{x.com/curlysaarthak}}
+
+\sectiontitle{Experience}
+
+\entry{Applied AI Intern}{\textbf{Mar 2026 -- May 2026}}{Brace.so}{}
+\begin{tightitems}
+  \item \textbf{Data Pipeline \& Optimization:} Designed and shipped a relationship-scoring strategy that reduced posts processed by \textbf{97\%} (\textbf{2,186 to 64} data points) while retaining \textbf{98\%} of high-quality relationship signals, validated through \textbf{60+} controlled experiments across \textbf{72} profiles and \textbf{\textasciitilde{}90K} baseline relationship records. Built the quality score using recency, engagement, virality controls, top-result filtering, and reaction limits, then reduced third-party API usage by consolidating a multi-step workflow into a single pass and cutting external API calls per profile refresh by \textbf{\textasciitilde{}60\%}.
+  \item \textbf{Search \& Ranking:} Rebuilt people search ranking so expanded LLM queries could enforce exact role, company, and location requirements, replacing soft score cutoffs with deterministic filtering for structured searches.
+  \item \textbf{Knowledge Graph \& Taxonomy:} Built an autonomous skill-taxonomy maintenance engine that extracts skills and tools from profile text, ranks evidence with semantic similarity and usage patterns, and classifies terms into parent-child categories.
+  \item \textbf{Decision Quality:} Built a review system that revisits uncertain skill matches after collecting more evidence across batches.
+  \item \textbf{Connection Path Finding:} Built a path expansion system that finds direct and indirect relationship paths up to \textbf{3} degrees away across \textbf{\textasciitilde{}4,700} profiles and \textbf{\textasciitilde{}11,600} relationship links, evaluating \textbf{3.4M+} candidate path checks and \textbf{29.3M} possible route combinations to improve candidate selection. Achieved a \textbf{99.87\%} path-finding success rate with \textbf{87.69\%} best-candidate selection accuracy using threshold-based selection, validated across \textbf{9} strategies and multiple profile-connectivity segments.
+\end{tightitems}
+
+\entry{UG Researcher}{\textbf{Jan 2025 -- Present}}{A\textbf{2}A Lab, IIIT Delhi}{On Site}
+\begin{tightitems}
+  \item Optimized embedded systems performance through targeted code and hardware improvements.
+  \item Developed an intuitive UI for visualizing complex system performance metrics.
+\end{tightitems}
+
+\entry{ML Engineer}{\textbf{Jun 2025 -- Nov 2025}}{Stealth Startup}{Contract work: \textbf{Jul 2025 -- Oct 2025}}
+\begin{tightitems}
+  \item \textbf{Business Impact:} Built the core ML infrastructure that helped the client secure a \textbf{INR 30 Lac (\textasciitilde{}\$35k)} research grant.
+  \item \textbf{Custom Tooling:} Adapted and extended GraphGym source code to ingest custom molecular embeddings, enabling automated experimentation across \textbf{48k} data points.
+  \item \textbf{Massive Scale:} Orchestrated \textbf{1,000,000+} optimization trials on remote distributed GPUs and beat Chemprop, the industry standard.
+  \item \textbf{Rapid Delivery:} Shipped a production-ready, lightweight \textbf{2M}-parameter inference API in \textbf{8} weeks, handling the full lifecycle from data ingestion to AWS deployment using FastAPI and Docker.
+\end{tightitems}
+
+\entry{Software Engineering Intern}{\textbf{Jan 2024 -- May 2024}}{HeydoTech}{}
+\begin{tightitems}
+  \item Used Python libraries including OpenCV and PyAutoGUI to develop \textbf{2} automation tools for internal projects.
+  \item Collaborated with cross-functional teams of \textbf{5+} members to implement feature enhancements, improving system performance for approximately \textbf{100} users.
+  \item Contributed to UI/UX improvements that enhanced overall user experience, measured by positive feedback from \textbf{80\%} of test users.
+\end{tightitems}
+
+\sectiontitle{Projects}
+
+\projectentry{Underwater Mysid Detection}{CV, Deep Learning, PyTorch, YOLOv\textbf{8} \textbar{} \textbf{Jan 2025 -- Present}}
+\begin{tightitems}
+  \item Built a CV pipeline for near-transparent mysid detection in underwater scenes, reaching \textbf{0.61} mAP\textbf{50} with augmented \textbf{38--114} image datasets and YOLOv\textbf{8}-seg improvements over U-Net baselines.
+\end{tightitems}
+
+\projectentry{Detoxify: Distraction Filter}{Python, JS, MLOps, Gemini API \textbar{} \textbf{Jan 2025 -- Present}}
+\begin{tightitems}
+  \item Built a Chrome extension using Gemini AI to classify YouTube batches in \textbf{1.95s}, analyzing \textbf{8--12} videos per batch and surfacing alerts for distracting content.
+\end{tightitems}
+
+\projectentry{\href{https://github.com/Saarthakkj/docbook}{Docbook}}{Python, GraphRAG, CLI \textbar{} \textbf{Apr 2025 -- Present}}
+\begin{tightitems}
+  \item GraphRAG-based CLI tool for intelligent documentation context extraction.
+  \item Converts a single URL input into a full knowledge graph using crawl\textbf{4}ai, with automated semantic search and retrieval.
+\end{tightitems}
+
+\projectentry{Ghibli Image Scraper}{JS, Chrome Ext API, Gemini AI \textbar{} \textbf{Mar 2025}}
+\begin{tightitems}
+  \item Created a Chrome extension using Gemini AI to detect and download Ghibli-style art from X.com, earning GitHub Projects Community visibility.
+\end{tightitems}
+
+\projectentry{\href{https://github.com/Saarthakkj/course_reccomendation}{Bayesian Course Recommendation System}}{Python, PyTorch, Bayesian ML \textbar{} \textbf{2025}}
+\begin{tightitems}
+  \item Achieved \textbf{0.915} AUC using Bayesian Personalized Ranking for implicit feedback.
+  \item Implemented matrix factorization with BPR optimization and probabilistic handling for cold-start recommendations.
+\end{tightitems}
+
+\sectiontitle{Education}
+
+\entry{BTech, Electronics and Communication Engineering}{\textbf{Nov 2022 -- Present}}{IIIT Delhi}{}
+
+\end{document}
