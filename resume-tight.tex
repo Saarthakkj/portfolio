@@ -1,6 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[margin=0.36in]{geometry}
+\usepackage[margin=0.42in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{array}
 \usepackage{tabularx}
@@ -11,7 +11,7 @@
 \setlength{\parskip}{0pt}
 \setlength{\tabcolsep}{0pt}
 \renewcommand{\arraystretch}{1.0}
-\linespread{0.93}
+\linespread{0.95}
 
 \definecolor{accent}{HTML}{0F766E}
 \definecolor{textgray}{HTML}{374151}
@@ -21,15 +21,15 @@
 }
 
 \newcommand{\contact}[1]{%
-  {\footnotesize #1}\par\vspace{4pt}
+  {\footnotesize #1}\par\vspace{2pt}
 }
 
 \newcommand{\sectiontitle}[1]{%
-  \vspace{3pt}
-  {\normalsize\bfseries\color{accent} #1}\par
   \vspace{1pt}
+  {\normalsize\bfseries\color{accent} #1}\par
+  \vspace{0.5pt}
   {\color{accent}\hrule height 0.6pt}
-  \vspace{2pt}
+  \vspace{1pt}
 }
 
 \newcommand{\entry}[4]{%
@@ -37,12 +37,12 @@
     {\bfseries #1} & {\footnotesize\bfseries #2} \\
     {\footnotesize\textit{#3}} & {\footnotesize #4}
   \end{tabularx}
-  \vspace{1pt}
+  \vspace{0pt}
 }
 
 \newcommand{\projectentry}[2]{%
   {\bfseries #1}\hfill{\footnotesize #2}\par
-  \vspace{1pt}
+  \vspace{0.5pt}
 }
 
 \newenvironment{tightitems}{%
@@ -50,15 +50,16 @@
     \setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}
-    \setlength{\topsep}{1pt}
-    \setlength{\leftmargin}{12pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\leftmargin}{10pt}
+    \setlength{\itemindent}{0pt}
 }{%
   \end{itemize}
-  \vspace{0pt}
+  \vspace{-2.5pt}
 }
 
 \begin{document}
-\fontsize{9.25}{10.2}\selectfont
+\fontsize{9.5}{10.6}\selectfont
 \raggedright
 
 \name{Saarthak Saxena}
@@ -70,6 +71,7 @@
 \sectiontitle{Experience}
 
 \entry{Applied AI Intern}{\textbf{Mar 2026 -- May 2026}}{Brace.so}{}
+\vspace{-3pt}
 \begin{tightitems}
   \item \textbf{Pedro (Autonomous KG Agent):} Built multi-LLM autonomous agent (Gemini + Claude) maintaining \textbf{10K+} node knowledge graph with zero manual curation. Uses parallel evaluation, deferred decisions for low-confidence cases, semantic similarity for evidence ranking, and parent-child taxonomy classification.
   \item \textbf{Search Engine:} Rebuilt people search ranking with \textbf{LLM-generated structured constraints} (xAI/Grok), replacing fuzzy matching with deterministic exact-match gating for role, company, and location.
@@ -77,35 +79,43 @@
   \item \textbf{Actor-Relationship Optimization:} Designed scoring via \textbf{60+} experiments reducing processed data to \textbf{2.93\%} of baseline (72 profiles, \textasciitilde{}90K records) while retaining \textbf{98\%} high-quality edges. Cut external API calls \textasciitilde{}60\% via single-pass consolidation.
   \item \textbf{Knowledge Graph Visualizer:} Built full-stack interactive visualizer for exploring and debugging the live 10K+ node graph.
 \end{tightitems}
+\vspace{-3.5pt}
 
 \entry{ML Engineer}{\textbf{Jun 2025 -- Nov 2025}}{Stealth Startup}{Contract: \textbf{Jul 2025 -- Oct 2025}}
+\vspace{-3pt}
 \begin{tightitems}
   \item \textbf{Novel GNN from Scratch:} Trained GNN from zero on novel pharmachemistry task + dataset + model under \textbf{\$35} budget. No pretrained weights, no reference implementations, no existing benchmarks.
   \item \textbf{Experimentation at Scale:} Extended GraphGym for \textbf{48k} data points. Orchestrated \textbf{1,000,000+} optimization trials on distributed GPUs and beat Chemprop, the industry standard.
-  \item \textbf{Production Delivery:} Shipped lightweight \textbf{2M}-param inference API in \textbf{8} weeks (full lifecycle: data ingestion to FastAPI + Docker + AWS deployment).
+  \item \textbf{Production Delivery:} Shipped lightweight \textbf{2M}-param inference API in \textbf{8 weeks} (full lifecycle: data ingestion to FastAPI + Docker + AWS deployment).
   \item \textbf{Business Impact:} Client used this work to secure a \textbf{INR 30 Lac (\textasciitilde\$35k)} research grant.
 \end{tightitems}
+\vspace{-3.5pt}
 
 \entry{Software Engineering Intern}{\textbf{Jan 2024 -- May 2024}}{HeydoTech}{}
+\vspace{-3pt}
 \begin{tightitems}
   \item Developed \textbf{2} automation tools using OpenCV and PyAutoGUI for internal projects.
   \item Collaborated with cross-functional teams of \textbf{5+} to ship feature enhancements improving performance for \textbf{\textasciitilde{}100} users.
   \item Delivered UI/UX improvements with positive feedback from \textbf{80\%} of test users.
 \end{tightitems}
+\vspace{-2pt}
 
 \sectiontitle{Projects}
 
 \projectentry{\href{https://github.com/Saarthakkj/docbook}{Docbook}}{Python, GraphRAG, CLI \textbar{} \textbf{Apr 2025 -- Present}}
+\vspace{-3pt}
 \begin{tightitems}
   \item GraphRAG-based CLI tool for intelligent documentation context extraction from single URL input.
   \item Converts URL to full knowledge graph using crawl4ai with automated semantic search and retrieval.
 \end{tightitems}
 
 \projectentry{\href{https://github.com/Saarthakkj/course_reccomendation}{Bayesian Course Recommendation System}}{Python, PyTorch, Bayesian ML \textbar{} \textbf{2025}}
+\vspace{-3pt}
 \begin{tightitems}
   \item Achieved \textbf{0.915} AUC using Bayesian Personalized Ranking (BPR) for implicit feedback recommendations.
   \item Matrix factorization with BPR optimization and probabilistic handling for cold-start problem.
 \end{tightitems}
+\vspace{-2pt}
 
 \sectiontitle{Education}
 
